@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "tips",
+  "info": {
+    "name": "tips"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "time_from": {
+      "type": "time",
+      "required": true,
+      "unique": true
+    },
+    "time_to": {
+      "type": "time"
+    },
+    "waiter": {
+      "via": "tips",
+      "model": "waiters"
+    },
+    "puntuactions": {
+      "collection": "puntuaction",
+      "via": "tip"
+    }
+  }
+}

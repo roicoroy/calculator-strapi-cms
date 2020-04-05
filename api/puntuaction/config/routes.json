@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/puntuactions",
+      "handler": "puntuaction.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puntuactions/count",
+      "handler": "puntuaction.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puntuactions/:id",
+      "handler": "puntuaction.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/puntuactions",
+      "handler": "puntuaction.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/puntuactions/:id",
+      "handler": "puntuaction.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/puntuactions/:id",
+      "handler": "puntuaction.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

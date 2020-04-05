@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "puntuactions",
+  "info": {
+    "name": "puntuaction"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "criteria": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "points": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "tip": {
+      "via": "puntuactions",
+      "model": "tips"
+    }
+  }
+}

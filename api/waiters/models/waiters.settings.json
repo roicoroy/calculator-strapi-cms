@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "waiters",
+  "info": {
+    "name": "waiters"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "tips": {
+      "collection": "tips",
+      "via": "waiter"
+    },
+    "last_name": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}
