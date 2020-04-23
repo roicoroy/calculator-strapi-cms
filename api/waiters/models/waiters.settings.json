@@ -10,18 +10,19 @@
     "timestamps": true
   },
   "attributes": {
-    "first_name": {
+    "name": {
       "type": "string",
       "unique": false,
-      "required": true
+      "required": false
     },
-    "tips": {
-      "collection": "tips",
-      "via": "waiter"
+    "points": {
+      "type": "decimal"
     },
-    "last_name": {
-      "type": "string",
-      "unique": true
+    "hours_today": {
+      "type": "decimal"
+    },
+    "tips_today": {
+      "type": "decimal"
     }
   }
 }

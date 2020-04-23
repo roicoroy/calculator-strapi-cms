@@ -19,10 +19,6 @@
       "type": "string",
       "unique": true,
       "required": true
-    },
-    "tip": {
-      "via": "puntuactions",
-      "model": "tips"
     }
   }
 }

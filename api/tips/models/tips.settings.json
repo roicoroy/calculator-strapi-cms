@@ -17,14 +17,6 @@
     },
     "time_to": {
       "type": "time"
-    },
-    "waiter": {
-      "via": "tips",
-      "model": "waiters"
-    },
-    "puntuactions": {
-      "collection": "puntuaction",
-      "via": "tip"
     }
   }
 }

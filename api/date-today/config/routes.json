@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/date-todays",
+      "handler": "date-today.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/date-todays/count",
+      "handler": "date-today.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/date-todays/:id",
+      "handler": "date-today.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/date-todays",
+      "handler": "date-today.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/date-todays/:id",
+      "handler": "date-today.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/date-todays/:id",
+      "handler": "date-today.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
